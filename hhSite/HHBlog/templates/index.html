@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>
+        首页
+    </title>
+</head>
+<body>
+    <h1>文章列表</h1>
+    <ul>
+        {% for article in articles %}
+            <li><a href="/HHBlog/article/{{article.id}}/">{{article.caption}}</a> </li>
+            <div>{{article.content}}</div>
+        {% endfor %}
+    </ul>
+</body>
+</html>
